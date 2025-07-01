@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Coding Conf 2025</title>
+  <link rel="stylesheet" href="/css/styles.css"/>
+
+</head>
+<body>
+    <img src="assets/images/background-desktop.png" alt="Background" class="bg-image">
+     <div class="page-wrapper">
+    <img src="assets/images/logo-full.svg" alt="logo" class="logo" width="250" height="125">
+  <div class="container" id="form-container">
+    <h1>Your Journey to <span>Coding Conf</span> 2025 Starts Here!</h1>
+    <p>Secure your spot at next year's biggest coding conference.</p>
+
+    <form id="register-form">
+      <label for="avatar-upload" class="upload-area">
+        <input type="file" id="avatar-upload" accept="image/png, image/jpeg" hidden>
+        <div id="upload-preview">Drag and drop or click to upload</div>
+        <small>Upload your photo (JPG or PNG, max size: 500KB).</small>
+      </label>
+
+      <input type="text" id="full-name" placeholder="Full Name" required/>
+      <input type="email" id="email" placeholder="Email Address" required/>
+      <input type="text" id="github" placeholder="GitHub Username" required/>
+
+      <button type="submit">Generate My Ticket</button>
+    </form>
+  </div>
+
+  <div class="container hidden" id="ticket-container">
+    <h1>Congrats, <span id="name-output"></span>!<br>Your ticket is ready.</h1>
+    <p>We've emailed your ticket to <span id="email-output"></span> and will send updates in the run up to the event.</p>
+
+    <div class="ticket">
+      <div class="ticket-info">
+        <p class="conf-title">Coding Conf</p>
+        <p class="conf-date">Jan 31, 2025 / Austin, TX</p>
+        <div class="user-info">
+          <img id="avatar-output" alt="Avatar"/>
+          <div>
+            <p class="username" id="user-output"></p>
+            <p class="handle" id="handle-output"></p>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-number">#01699</div>
+    </div>
+  </div>
+
+  <script src="java.js/index.js"></script>
+</body>
+</html>

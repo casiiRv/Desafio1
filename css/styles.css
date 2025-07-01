@@ -1,0 +1,136 @@
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Manda la imagen al fondo */
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url("asset") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  margin: 40px auto 20px auto; /* separa del borde superior y del contenido */
+  height: 60px;
+}
+
+.container {
+  max-width: 500px;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+h1 span {
+  color: #ff69b4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+input {
+  background: #2a2a2a;
+  color: white;
+}
+
+button {
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e255a8;
+}
+
+.upload-area {
+  border: 2px dashed #888;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #2a2a2a;
+}
+
+.upload-area:hover {
+  border-color: #ff69b4;
+}
+
+#upload-preview {
+  margin-bottom: 10px;
+}
+
+.ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e003e;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  border-left: 4px dashed #ff69b4;
+}
+
+.ticket-info {
+  text-align: left;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.handle {
+  color: #ccc;
+}
+
+.ticket-number {
+  font-size: 1.2rem;
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
